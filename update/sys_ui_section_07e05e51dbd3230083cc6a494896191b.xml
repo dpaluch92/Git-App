@@ -1,74 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="07e05e51dbd3230083cc6a494896191b" sys_domain="global" table="x_284063_git_app_application_table" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>executed</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-01-28 15:45:48</sys_created_on>
-            <sys_id>c7e05e51dbd3230083cc6a494896191d</sys_id>
+            <sys_created_on>2019-01-28 15:54:17</sys_created_on>
+            <sys_id>5fd296d1dbd3230083cc6a494896190d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_284063_git_app_application_table" sys_domain="global" view="Default view">07e05e51dbd3230083cc6a494896191b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-01-28 15:45:48</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>executed</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-01-28 15:45:48</sys_created_on>
-            <sys_id>cfe05e51dbd3230083cc6a494896191d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_284063_git_app_application_table" sys_domain="global" view="Default view">07e05e51dbd3230083cc6a494896191b</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-01-28 15:45:48</sys_updated_on>
+            <sys_updated_on>2019-01-28 15:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-01-28 15:45:48</sys_created_on>
-            <sys_id>43e05e51dbd3230083cc6a494896191e</sys_id>
+            <sys_created_on>2019-01-28 15:54:17</sys_created_on>
+            <sys_id>dfd296d1dbd3230083cc6a494896190d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_284063_git_app_application_table" sys_domain="global" view="Default view">07e05e51dbd3230083cc6a494896191b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-01-28 15:45:48</sys_updated_on>
+            <sys_updated_on>2019-01-28 15:54:17</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>inserted_incident</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-01-28 15:45:48</sys_created_on>
-            <sys_id>c3e05e51dbd3230083cc6a494896191e</sys_id>
+            <sys_created_on>2019-01-28 15:54:17</sys_created_on>
+            <sys_id>53d296d1dbd3230083cc6a494896190e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_284063_git_app_application_table" sys_domain="global" view="Default view">07e05e51dbd3230083cc6a494896191b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-01-28 15:45:48</sys_updated_on>
+            <sys_updated_on>2019-01-28 15:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>4</position>
+            <element>number</element>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-01-28 15:45:48</sys_created_on>
-            <sys_id>47e05e51dbd3230083cc6a494896191e</sys_id>
+            <sys_created_on>2019-01-28 15:59:45</sys_created_on>
+            <sys_id>6314d615dbd3230083cc6a4948961914</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_284063_git_app_application_table" sys_domain="global" view="Default view">07e05e51dbd3230083cc6a494896191b</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-01-28 15:45:48</sys_updated_on>
+            <sys_updated_on>2019-01-28 15:59:45</sys_updated_on>
             <sys_user/>
-            <type>.end_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

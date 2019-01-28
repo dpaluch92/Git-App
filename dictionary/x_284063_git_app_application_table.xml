@@ -2,6 +2,7 @@
     <element label="Application Table" max_length="40" name="x_284063_git_app_application_table" type="collection">
         <element label="Executed" max_length="40" name="executed" type="glide_date_time"/>
         <element label="Inserted Incident" max_length="32" name="inserted_incident" reference="incident" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="inserted_incident"/>
         </index>
