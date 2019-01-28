@@ -3,6 +3,13 @@
         <element label="Executed" max_length="40" name="executed" type="glide_date_time"/>
         <element label="Inserted Incident" max_length="32" name="inserted_incident" reference="incident" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" default="1" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" value="3"/>
+                <element inactive_on_update="false" label="In Progress" value="2"/>
+                <element inactive_on_update="false" label="New" value="1"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="inserted_incident"/>
         </index>

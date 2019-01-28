@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_284063_git_app_application_table</basic_apply_to>
+        <basic_query_from>incident</basic_query_from>
+        <insert_callback/>
+        <name>Incident</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	current.addQuery('sys_id',parent.inserted_incident);
+
+})(current, parent);]]></query_with>
+        <reference_field>assigned_to</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-28 16:25:11</sys_created_on>
+        <sys_id>a2d7ded5dbd3230083cc6a4948961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Incident</sys_name>
+        <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
+        <sys_update_name>sys_relationship_a2d7ded5dbd3230083cc6a4948961968</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-28 16:25:11</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=a2d7ded5dbd3230083cc6a4948961968"/>
+</record_update>
