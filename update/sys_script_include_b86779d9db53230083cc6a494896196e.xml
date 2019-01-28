@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_284063_git_app.GenerateRandomIncident</api_name>
+        <client_callable>false</client_callable>
+        <description>Utility to generate random incident</description>
+        <name>GenerateRandomIncident</name>
+        <script><![CDATA[var GenerateRandomIncident = Class.create();
+GenerateRandomIncident.prototype = {
+	initialize: function() {
+	},
+
+	execute : function() {
+		var insertRandomIncident = new GlideRecord('incident');
+		insertRandomIncident.newRecord();
+		var randomValues = this.getDataForRecord();
+
+		insertRandomIncident.setValue('caller_id', randomValues.caller_id);
+		insertRandomIncident.setValue('business_service', randomValues.business_service);
+		insertRandomIncident.setValue('cmdb_ci', randomValues.configuration_item);
+		insertRandomIncident.setValue('location', randomValues.location);
+		insertRandomIncident.setValue('assignment_group', randomValues.assignment_group);
+		insertRandomIncident.setValue('assigned_to', randomValues.assigned_to);
+		insertRandomIncident.setValue('short_description',insertRandomIncident.sys_id);
+		insertRandomIncident.insert();
+	},
+
+	getDataForRecord : function() {
+		var returnObj = {};
+		
+		var caller_id = new GlideRecord('sys_user');
+		caller_id.query();
+		
+		var business_service = new GlideRecord('cmdb_ci_service'); 
+		business_service.query();
+		
+		var configuration_item = new GlideRecord('cmdb_ci'); 
+		configuration_item.query();
+		
+		var location = new GlideRecord('cmn_location'); 
+		location.query();
+		
+		var assignment_group = new GlideRecord('sys_user_group'); 
+		assignment_group.query();
+
+		returnObj.caller_id = this.getRandomValueOfField(caller_id);
+		returnObj.business_service = this.getRandomValueOfField(business_service);
+		returnObj.configuration_item = this.getRandomValueOfField(configuration_item);
+		returnObj.location = this.getRandomValueOfField(location);
+		returnObj.assignment_group = this.getRandomValueOfField(assignment_group);
+		
+		var grmembers = new GlideRecord('sys_user_grmember'); 
+		grmembers.addQuery('group',returnObj.assignment_group); grmembers.query();
+
+		returnObj.assigned_to = this.getRandomValueOfField(grmembers);
+		return returnObj;
+	},
+
+	getRandomValueOfField : function(obj) {
+		if(obj.hasNext()){
+			var numRecs = obj.getRowCount();
+			var randomNumber = Math.floor(Math.random()*numRecs);
+
+			for(i=0; i<=randomNumber; i++){
+				obj.next();
+			}
+
+			if(obj.getClassDisplayValue()=='Group Member'){
+				return obj.user.sys_id;
+			} else {
+				return obj.sys_id;
+			}
+		}
+	},
+
+	type: 'GenerateRandomIncident'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-28 14:06:16</sys_created_on>
+        <sys_id>b86779d9db53230083cc6a494896196e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>GenerateRandomIncident</sys_name>
+        <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
+        <sys_update_name>sys_script_include_b86779d9db53230083cc6a494896196e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-28 14:23:24</sys_updated_on>
+    </sys_script_include>
+</record_update>
