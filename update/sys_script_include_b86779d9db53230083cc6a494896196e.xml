@@ -12,9 +12,9 @@ GenerateRandomIncident.prototype = {
 	},
 
 	execute : function() {
+		
 		var gitGlide = new GlideRecord('x_284063_git_app_application_table');
 		gitGlide.newRecord();
-		gitGlide.insert();
 		
 		var insertRandomIncident = new GlideRecord('incident');
 		insertRandomIncident.newRecord();
@@ -27,13 +27,13 @@ GenerateRandomIncident.prototype = {
 		insertRandomIncident.setValue('location', randomValues.location);
 		insertRandomIncident.setValue('assignment_group', randomValues.assignment_group);
 		insertRandomIncident.setValue('assigned_to', randomValues.assigned_to);
-		insertRandomIncident.setValue('short_description',insertRandomIncident.sys_id);
+		insertRandomIncident.setValue('short_description','Incident generated number - ' + insertRandomIncident.number);
 		insertRandomIncident.insert();
 		
 		gitGlide.setValue('executed',insertRandomIncident.sys_created_on);
 		gitGlide.setValue('inserted_incident',insertRandomIncident.sys_id);
 		gitGlide.setValue('state',3);
-		gitGlide.update();
+		gitGlide.insert();
 	},
 
 	getDataForRecord : function() {
@@ -90,13 +90,13 @@ GenerateRandomIncident.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-01-28 14:06:16</sys_created_on>
         <sys_id>b86779d9db53230083cc6a494896196e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>GenerateRandomIncident</sys_name>
         <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
         <sys_update_name>sys_script_include_b86779d9db53230083cc6a494896196e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-28 16:12:34</sys_updated_on>
+        <sys_updated_on>2019-01-28 16:59:09</sys_updated_on>
     </sys_script_include>
 </record_update>
