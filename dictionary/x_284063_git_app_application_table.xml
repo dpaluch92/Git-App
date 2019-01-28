@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Application Table" max_length="40" name="x_284063_git_app_application_table" type="collection">
+        <element label="FieldOne" max_length="40" name="fieldone" type="string"/>
+        <element label="FieldTwo" max_length="40" name="fieldtwo" type="string"/>
+    </element>
+</database>
