@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition><![CDATA[function checkNumberOfIncidents() {
+	var incidentRecords = new GlideRecord('incident');
+	incidentRecords.query();
+
+	if(incidentRecords.getRowCount() < 100){
+		return true;
+	}
+}
+
+checkNumberOfIncidents();]]></condition>
+        <conditional>true</conditional>
+        <name>Create New Incident On The End Of Month</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>31</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-01-28 14:11:12</run_start>
+        <run_time>1970-01-02 07:00:00</run_time>
+        <run_type>monthly</run_type>
+        <script><![CDATA[var insertRandIncident = new GenerateRandomIncident();
+insertRandIncident.execute();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-28 14:12:25</sys_created_on>
+        <sys_id>994bf19ddb53230083cc6a4948961903</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create New Incident On The End Of Month</sys_name>
+        <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
+        <sys_update_name>sysauto_script_994bf19ddb53230083cc6a4948961903</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-28 14:38:55</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
