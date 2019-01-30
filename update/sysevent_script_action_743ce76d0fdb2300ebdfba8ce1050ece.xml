@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_284063_git_app.execute.create.daily.ne</event_name>
+        <name>Execute Schedule Create Daily New Inc</name>
+        <order>100</order>
+        <script><![CDATA[var griInclude = new GenerateRandomIncident();
+griInclude.execute(current);]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-29 17:12:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>743ce76d0fdb2300ebdfba8ce1050ece</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Execute Schedule Create Daily New Inc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
+        <sys_update_name>sysevent_script_action_743ce76d0fdb2300ebdfba8ce1050ece</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-30 09:30:05</sys_updated_on>
+    </sysevent_script_action>
+</record_update>
