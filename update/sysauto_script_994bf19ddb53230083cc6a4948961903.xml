@@ -21,20 +21,24 @@ checkNumberOfIncidents();]]></condition>
         <run_start>2019-01-28 14:11:12</run_start>
         <run_time>1970-01-02 07:00:00</run_time>
         <run_type>daily</run_type>
-        <script><![CDATA[var insertRandIncident = new GenerateRandomIncident();
-insertRandIncident.execute();]]></script>
+        <script><![CDATA[var gitGlide = new GlideRecord('x_284063_git_app_application_table');
+gitGlide.newRecord();
+gitGlide.insert();
+
+var insertRandIncident = new GenerateRandomIncident();
+insertRandIncident.execute(gitGlide);]]></script>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-01-28 14:12:25</sys_created_on>
         <sys_id>994bf19ddb53230083cc6a4948961903</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Create Daily New Incident </sys_name>
         <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
         <sys_update_name>sysauto_script_994bf19ddb53230083cc6a4948961903</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-30 09:30:48</sys_updated_on>
+        <sys_updated_on>2019-01-30 09:42:49</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
