@@ -5,7 +5,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_284063_git_app_application_table">number=javascript:GetRecords()^EQ<item endquery="false" field="number" goto="false" newquery="false" operator="=" or="false" value="javascript:GetRecords()"/>
+        <filter table="x_284063_git_app_application_table">number=javascript: x_284063_git_app.GetRecords()^EQ<item endquery="false" field="number" goto="false" newquery="false" operator="=" or="false" value="javascript: x_284063_git_app.GetRecords()"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c3d669d2db17230083cc6a49489619be</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CAB  Approval Group</sys_name>
         <sys_overrides/>
         <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
         <sys_update_name>sys_app_module_c3d669d2db17230083cc6a49489619be</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-31 15:38:12</sys_updated_on>
+        <sys_updated_on>2019-02-01 11:30:23</sys_updated_on>
         <timeline_page/>
         <title>CAB  Approval Group</title>
         <uncancelable>false</uncancelable>
