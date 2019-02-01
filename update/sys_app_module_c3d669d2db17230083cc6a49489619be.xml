@@ -11,7 +11,7 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>REPORT</link_type>
         <map_page/>
         <mobile_title>CAB </mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
@@ -19,7 +19,7 @@
         <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
-        <report/>
+        <report display_value="Inserted Incidents Sorted by Assignment Groups">0e9a1262db53630083cc6a49489619b5</report>
         <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c3d669d2db17230083cc6a49489619be</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>CAB  Approval Group</sys_name>
         <sys_overrides/>
         <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
         <sys_update_name>sys_app_module_c3d669d2db17230083cc6a49489619be</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-01 11:30:23</sys_updated_on>
+        <sys_updated_on>2019-02-01 13:50:04</sys_updated_on>
         <timeline_page/>
         <title>CAB  Approval Group</title>
         <uncancelable>false</uncancelable>
