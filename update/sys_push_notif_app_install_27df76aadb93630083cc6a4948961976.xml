@@ -10,7 +10,7 @@
         <sys_name>dJ1K-yxyM7U:APA91bEXynj7bwvmcKhJeQW0aqmsqO9IdVZXI_TGJQ5V2JOuA6OrZT2h0YwhygRv9uCTfjQXjRqbyJNmfDllGUGYG7dWsdomrExcUbFmz52QeBRBqYfy73i2diflISMxTkzmfM6H7ZFj</sys_name>
         <sys_package display_value="Git App" source="x_284063_git_app">5f73b595db53230083cc6a49489619f9</sys_package>
         <sys_policy/>
-        <sys_push_application_id display_value="ServiceNow Mobile Application">ab704041ff1102009738ffffffffff33</sys_push_application_id>
+        <sys_push_application_id display_value="ServiceNow Classic Mobile Application">ab704041ff1102009738ffffffffff33</sys_push_application_id>
         <sys_push_platform_id display_value="Google">53e75f30ff0002009738ffffffffff12</sys_push_platform_id>
         <sys_scope display_value="Git App">5f73b595db53230083cc6a49489619f9</sys_scope>
         <sys_update_name>sys_push_notif_app_install_27df76aadb93630083cc6a4948961976</sys_update_name>
